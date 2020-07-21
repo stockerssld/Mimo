@@ -1,13 +1,28 @@
+
 <div class="container">
   <div class="content-projects">
     <div class="content-title">
       <h1>Projects</h1>
+      <input type="radio" id="mostrar-modal" name="modal"/>
+      <label class="button" for="mostrar-modal">
+          Web Development
+          <div>
+            <i class="fa fa-angle-down fa-1x" aria-hidden="true"></i>
+          </div>
+      </label>
+      <input type="radio" id="cerrar-modal" name="modal"/>
+      <div id="modal">
+        <ul>
+          <div></div>
+          <label class="option" for="cerrar-modal">Web Development</label>
+          <label class="option" for="cerrar-modal">Python Programming</label>
+          <label class="option" for="cerrar-modal">Learn Team Prototype</label>
+        </ul>
+      </div>
     </div>
     <div class="projects-list">
       <div *ngFor="let card of exampleCards" >
-        <app-cards [card]="card">
-
-        </app-cards>
+        <app-cards [card]="card"></app-cards>
       </div>
     </div>
   </div>

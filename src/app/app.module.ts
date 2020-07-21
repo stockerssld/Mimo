@@ -10,8 +10,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
 import { CircleProgressComponent } from './components/circle-progress/circle-progress.component';
 import { TooltipComponent } from './components/tooltip/tooltip.component'
-import {NgCircleProgressModule} from 'ng-circle-progress'
-
+import {NgCircleProgressModule} from 'ng-circle-progress';
+import { LearnToCodeComponent } from './pages/learn-to-code/learn-to-code.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +20,8 @@ import {NgCircleProgressModule} from 'ng-circle-progress'
     NavbarComponent,
     WelcomeComponent,
     CircleProgressComponent,
-    TooltipComponent
+    TooltipComponent,
+    LearnToCodeComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,7 +34,7 @@ import {NgCircleProgressModule} from 'ng-circle-progress'
       outerStrokeColor: "#78C000",
       innerStrokeColor: "#C7E596",
       animationDuration: 300,
-    })
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]

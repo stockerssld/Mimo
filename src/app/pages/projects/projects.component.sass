@@ -1,7 +1,5 @@
-.container
-  display: flex
-  width: 100%
-  justify-content: center
+
+
 .content-projects
   display: flex
   flex-direction: column
@@ -10,6 +8,8 @@
   max-width: 1080px
   flex-shrink: 0
   box-sizing: border-box
+  position: absolute
+
 
 app-cards
   display: flex
@@ -17,18 +17,13 @@ app-cards
   flex-wrap: wrap
   justify-content: space-between
 
-h1
-  font-family: 'Didact Gothic', sans-serif
-  font-size: 24px
-  line-height: 40px
-  color: #4d4d87
-  margin: 0px 0px 0px 0px
 
 .content-title
   display: flex
   justify-content: space-between
   align-items: center
   margin-bottom: 40px
+  z-index: 1
 
 .projects-list
   display: grid
@@ -37,3 +32,130 @@ h1
   -moz-column-gap: 24px
   column-gap: 24px
   row-gap: 50px
+  z-index: 0
+
+.button
+  cursor: pointer
+  border-radius: 24px
+  padding-left: 20px
+  padding-right: 20px
+  border: 0px
+  background-color: #62d76b
+  color: #ffffff
+  height: 48px
+  font-size: 16px
+  letter-spacing: 1px
+  font-family: FibraOne-Bold, Gotham Rounded A, Gotham Rounded B, Segoe UI, Roboto, Oxygen, Ubuntu, Droid Sans, Helvetica Neue, sans-serif
+  background-color: #1e96ff
+  display: flex
+  align-items: center
+  height: 40px
+  border-radius: 20px
+  letter-spacing: 0px
+  outline: none
+  &:hover
+    background-color: #0078e6
+  & > div
+    display: flex
+    width: 16px
+    height: 16px
+    flex-shrink: 0
+    margin-left: 8px
+    fill: #ffffff
+    padding-bottom: 6px
+    & > i
+      font-size: x-large
+
+#modal
+  background:rgba(#000,0.9)
+  color: #fff
+  position: absolute
+  top: 6rem
+  right: 2.5rem
+  height: 100vh
+  width: 100vw
+  transition: all .5s
+  display: none
+
+  ul
+    position: absolute
+    right: 0px
+    list-style-type: none
+    z-index: 3
+    padding: 12px 0px
+    cursor: pointer
+    border-radius: 12px
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2)
+    background-color: #ffffff
+    flex-direction: column
+    min-width: 230px
+    display: flex
+    & > div
+      position: fixed
+      top: 0px
+      left: 0px
+      bottom: 0px
+      right: 0px
+      background-color: transparent
+    & > label
+      display: flex
+      align-items: center
+      height: 40px
+      padding: 0px 16px
+      font-family: 'Didact Gothic', sans-serif
+
+      font-size: 14px
+      line-height: 19px
+      color: #9798a9
+      z-index: 4
+
+#mostrar-modal
+  display: none
+  &:hover
+    background: darken(steelblue,10%)
+  &:checked
+    & ~ #modal
+      display: flex
+    & ~ #cerrar-modal + label
+      display: block
+.option
+  cursor: pointer
+  padding-left: 20px
+  padding-right: 20px
+  border: 0px
+  color: #9798a9
+  height: 48px
+  font-size: 16px
+  letter-spacing: 1px
+  font-family: 'Didact Gothic', sans-serif
+  display: flex
+  align-items: center
+  height: 40px
+  letter-spacing: 0px
+  outline: none
+  &:hover
+    color: #3e416d
+    background-color: #f0f5fd
+#cerrar-modal
+  display: none
+  + label
+    position: absolute
+    top: 1em
+    right: 1em
+    z-index: 1
+    color: #fff
+    font-weight: bold
+    cursor: pointer
+    background: tomato
+    width: 25px
+    height: 25px
+    line-height: 25px
+    text-align: center
+    display: none
+    transition: all .5s
+
+  &:checked
+    & ~ #modal
+      display: none
+    & + label
+      display: none
