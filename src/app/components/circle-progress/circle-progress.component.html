@@ -1,0 +1,28 @@
+<a href="#" class="has-tooltip">
+
+  <div *ngIf="chapter[0].progress==0" class="circle " tooltip="Chapter 1: yout personal home">
+    <span class="tooltip tooltip-with-border" role="tooltip">{{chapter[0].title}}</span>
+    <h2>{{chapter[0].number}}</h2>
+  </div>
+
+  <div *ngIf="chapter[0].progress!=0" class="circle active " >
+    <span class="tooltip tooltip-with-border" role="tooltip">{{chapter[0].title}}</span>
+    <circle-progress
+      style="padding-top: 6px"
+      [percent]="chapter[0].progress"
+      [radius]="15"
+      [outerStrokeWidth]="4"
+      [innerStrokeWidth]="10"
+      [showSubtitle] = "false"
+      [showUnits] = "false"
+      [title]="chapter[0].number"
+      [titleColor] = "'#3e416d'"
+      [outerStrokeColor]="'#62d76b'"
+      [innerStrokeColor]="'transparent'"
+      [animation]="true"
+      [animationDuration]="300"
+    ></circle-progress>
+  </div>
+
+</a>
+

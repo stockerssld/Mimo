@@ -1,4 +1,17 @@
-.project-list
+.container
+  display: flex
+  width: 100%
+  justify-content: center
+.content-projects
+  display: flex
+  flex-direction: column
+  width: 100%
+  padding: 40px 40px
+  max-width: 1080px
+  flex-shrink: 0
+  box-sizing: border-box
+
+app-cards
   display: flex
   flex-direction: row
   flex-wrap: wrap
@@ -10,3 +23,17 @@ h1
   line-height: 40px
   color: #4d4d87
   margin: 0px 0px 0px 0px
+
+.content-title
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 40px
+
+.projects-list
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  -webkit-column-gap: 24px
+  -moz-column-gap: 24px
+  column-gap: 24px
+  row-gap: 50px

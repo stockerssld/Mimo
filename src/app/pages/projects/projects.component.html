@@ -1,2 +1,14 @@
-<h1>Projects</h1>
-<app-cards class="project-list" [DataCard]="exampleCards"></app-cards>
+<div class="container">
+  <div class="content-projects">
+    <div class="content-title">
+      <h1>Projects</h1>
+    </div>
+    <div class="projects-list">
+      <div *ngFor="let card of exampleCards" >
+        <app-cards [card]="card">
+
+        </app-cards>
+      </div>
+    </div>
+  </div>
+</div>

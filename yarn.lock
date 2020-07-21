@@ -5648,6 +5648,13 @@ next-tick@~1.0.0:
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
   integrity sha1-yobR/ogoFpsBICCOPchCS524NCw=
 
+ng-circle-progress@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/ng-circle-progress/-/ng-circle-progress-1.5.1.tgz#ea4ea89318754b929dc1550d5779e391d7c5c646"
+  integrity sha512-gJ0SdWc+TkXckfbhbvUY522yjya3qcc1a3lGvvVyLsUfSOgll8LQaZGDEko84d8dk8vYO83n0O5vP+e8bJTInQ==
+  dependencies:
+    tslib "^1.9.0"
+
 nice-try@^1.0.4:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
