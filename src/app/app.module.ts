@@ -17,6 +17,7 @@ import { SignUpComponent } from './pages/user/sign-up/sign-up.component';
 import { InputWithIconComponent } from './components/form/input/input-with-icon/input-with-icon.component';
 import { ButtonComponent } from './components/Buttons/button/button.component';
 import { ButtonWithIconsComponent } from './components/Buttons/button-with-icons/button-with-icons.component';
+import { PlaygroundsComponent } from './pages/playgrounds/playgrounds.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,6 +33,7 @@ import { ButtonWithIconsComponent } from './components/Buttons/button-with-icons
     InputWithIconComponent,
     ButtonComponent,
     ButtonWithIconsComponent,
+    PlaygroundsComponent,
   ],
   imports: [
     BrowserModule,

@@ -4,10 +4,12 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
 import { SignInComponent } from './pages/user/sign-in/sign-in.component';
 import { SignUpComponent } from './pages/user/sign-up/sign-up.component';
+import { PlaygroundsComponent } from './pages/playgrounds/playgrounds.component';
 
 
 
 const routes: Routes = [
+  {path:'playgrounds', component: PlaygroundsComponent},
   {path:'projects', component: ProjectsComponent },
   {path:'login', component: SignInComponent},
   {path:'register', component: SignUpComponent},
@@ -16,6 +18,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-exports: [RouterModule]
+  exports: [RouterModule]
 })
 export class AppRoutingModule { }

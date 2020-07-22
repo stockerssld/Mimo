@@ -1,6 +1,6 @@
 <div class="field">
   <div class="control">
-    <input [type]="DataInput.type" [placeholder]="DataInput.placeholder">
+    <input [type]="DataInput.type" [placeholder]="DataInput.placeholder"  (change)="setValue($event)">
     <span class="icon is-left">
       <img [src]="'./../../../../../assets/svg/'+ DataInput.icon + '.svg'"alt="">
     </span>

@@ -1,51 +1,50 @@
 <div class="main">
-
   <div class="container">
     <div class="login-container">
+      <div class="align-column">
+        <div class="image">
+          <img src="./../../../../assets/img/lanz.png" alt="">
+        </div>
+        <div class="title">
+          Let's create an Account
+        </div>
+        <div class="buttonsContent">
+          <div class="facebook">
+            <app-button-with-icons [DataButton]="buttonFacebook"></app-button-with-icons>
+          </div>
+          <div class="google">
+            <app-button-with-icons [DataButton]="buttonGoogle"></app-button-with-icons>
+          </div>
+          <div class="apple">
+            <app-button-with-icons [DataButton]="buttonApple"></app-button-with-icons>
+          </div>
+          <div class="separator">
+            <span>or sign up with email</span>
+          </div>
+      <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
 
-    <div class="align-column">
-      <div class="image">
-        <img src="./../../../../assets/img/lanz.png" alt="">
-      </div>
-      <div class="title">
-        Let's create an Account
-      </div>
-      <div class="buttonsContent">
-      <div class="facebook">
-        <app-button-with-icons [DataButton]="buttonFacebook"></app-button-with-icons>
-      </div>
-      <div class="google">
-        <app-button-with-icons [DataButton]="buttonGoogle"></app-button-with-icons>
-      </div>
-      <div class="apple">
-        <app-button-with-icons [DataButton]="buttonApple"></app-button-with-icons>
-      </div>
-      <div class="separator">
-        <span>or log in with email</span>
-      </div>
+          <app-input-with-icon [DataInput]="email"></app-input-with-icon>
+          <app-input-with-icon [DataInput]="password"></app-input-with-icon>
 
-      <app-input-with-icon [DataInput]="email"></app-input-with-icon>
-      <app-input-with-icon [DataInput]="password"></app-input-with-icon>
+          <div class="link">
+              By signing up, you accept our
+              <span class="subtext">
+                Terms
+              </span>
+              and
+              <span class="subtext">
+                Privacy Policy
+              </span>
+            </div>
+          <app-button [DataButton]="buttonRegister"></app-button>
+          <div class="text">
+            Already have an account?<span class="link" routerLink="/login">Log in</span>
+          </div>
+      </form>
 
-      <div class="link">
-        By signing up, you accept our
-        <span class="subtext">
-          Terms
-        </span>
-           and
-        <span class="subtext">
-          Privacy Policy
-        </span>
+        </div>
+
       </div>
-
-      <app-button [DataButton]="buttonLogin"></app-button>
-      <div class="text">
-        Already have an account?<span class="link">Log in</span>
-      </div>
-
     </div>
-
-    </div>
   </div>
-  </div>
-  </div>
+</div>

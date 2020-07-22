@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-input-with-icon',
@@ -8,10 +8,17 @@ import { Component, OnInit, Input } from '@angular/core';
 export class InputWithIconComponent implements OnInit {
 
   @Input() DataInput
+
+  value: string = ''
+
+  @Output() DataOutput = new EventEmitter<string>()
+
+
   constructor() { }
 
-  ngOnInit(): void {
-    console.log(this.DataInput.placeholder)
-  }
+  ngOnInit(): void {}
 
+  setValue(input){
+    this.DataOutput.emit(input.srcElement.value)
+  }
 }
