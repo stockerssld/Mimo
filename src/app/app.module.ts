@@ -12,6 +12,11 @@ import { CircleProgressComponent } from './components/circle-progress/circle-pro
 import { TooltipComponent } from './components/tooltip/tooltip.component'
 import {NgCircleProgressModule} from 'ng-circle-progress';
 import { LearnToCodeComponent } from './pages/learn-to-code/learn-to-code.component';
+import { SignInComponent } from './pages/user/sign-in/sign-in.component';
+import { SignUpComponent } from './pages/user/sign-up/sign-up.component';
+import { InputWithIconComponent } from './components/form/input/input-with-icon/input-with-icon.component';
+import { ButtonComponent } from './components/Buttons/button/button.component';
+import { ButtonWithIconsComponent } from './components/Buttons/button-with-icons/button-with-icons.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +27,11 @@ import { LearnToCodeComponent } from './pages/learn-to-code/learn-to-code.compon
     CircleProgressComponent,
     TooltipComponent,
     LearnToCodeComponent,
+    SignInComponent,
+    SignUpComponent,
+    InputWithIconComponent,
+    ButtonComponent,
+    ButtonWithIconsComponent,
   ],
   imports: [
     BrowserModule,

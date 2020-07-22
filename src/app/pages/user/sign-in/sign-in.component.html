@@ -1,0 +1,44 @@
+<div class="main">
+
+<div class="container">
+  <div class="login-container">
+
+    <div class="align-column">
+      <div class="image">
+        <img src="./../../../../assets/img/lanz.png" alt="">
+      </div>
+    <div class="title">
+      Log in to your account
+    </div>
+    <div class="buttonsContent">
+    <div class="facebook">
+      <app-button-with-icons [DataButton]="buttonFacebook"></app-button-with-icons>
+    </div>
+    <div class="google">
+      <app-button-with-icons [DataButton]="buttonGoogle"></app-button-with-icons>
+    </div>
+    <div class="apple">
+      <app-button-with-icons [DataButton]="buttonApple"></app-button-with-icons>
+    </div>
+    <div class="separator">
+      <span>or log in with email</span>
+    </div>
+
+    <app-input-with-icon [DataInput]="email"></app-input-with-icon>
+    <app-input-with-icon [DataInput]="password"></app-input-with-icon>
+
+    <div class="link">
+      forgot Password?
+    </div>
+
+    <app-button [DataButton]="buttonLogin"></app-button>
+    <div class="text">
+      Don't have an account? <span class="link"> Sign up</span>
+    </div>
+
+  </div>
+
+  </div>
+</div>
+</div>
+</div>

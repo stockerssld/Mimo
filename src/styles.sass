@@ -5,9 +5,14 @@
 @import "./assets/styles/tooltip"
 @import "./../node_modules/font-awesome/css/font-awesome"
 @import "./assets/styles/typography"
+@import "./assets/styles/link"
+@import "./assets/styles/separator"
 
+$font-stack: 'Didact Gothic', sans-serif
 
 *
+  font-family: $font-stack
+
   &:nth-child(3n)
     @media screen and ( max-width:640px)
       display: none
@@ -20,3 +25,22 @@
 .flex
   display: flex
   flex:1
+.field
+  &:not(:last-child)
+    margin-bottom: 0.75rem
+
+.control
+  display: flex
+  border-radius: 4px
+  border: 2px solid #ebebee
+  margin-bottom: 8px
+  height: 48px
+  align-items: center
+  width: 100%
+  box-sizing: border-box
+  overflow: hidden
+  box-sizing: border-box
+  clear: both
+  font-size: 1rem
+  position: relative
+  text-align: left
