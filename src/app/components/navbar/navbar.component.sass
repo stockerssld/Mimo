@@ -1,42 +1,123 @@
+// // nav
+//     // flex-direction: row
+//     // display: flex
+//     // font-family: 'Didact Gothic', sans-serif
+//     // padding-right: 3rem
+//     // padding-left: 3rem
+//     // padding-bottom: 1rem
+//     // color: #3e416d
+// #logo
+//     height:5px
+// svg
+//     height: 34px
+//     width: 77px
+//     &:hover
+//         cursor: pointer
+
+// .content
+//     flex-direction: row
+//     justify-content: space-between
+//     align-items: center
+// .content-items
+//     flex-direction: row
+//     display: flex
+//     // align-items: center
+
+// h3
+//     &#btn-sign-in
+//         color: #ddd
+//     padding:20px
+//     &#btn-sign-up
+//         border-style: solid
+//         border-radius: 12px
+//         border-color: #62d76b
+//         padding-left: 12px
+//         padding-right: 12px
+//         padding-bottom: 2px
+//         &:hover
+//             background-color: #62d76b
+//             color: white
+    // font-size: 16px
+    // font-family: FibraOne-Bold, Gotham Rounded A, Gotham Rounded B, Segoe UI, Roboto, Oxygen, Ubuntu, Droid Sans, Helvetica Neue, sans-serif
+    // letter-spacing: 0.6px
+    // color: #b0b2be
+    // cursor: pointer
+    // text-decoration: none
+//     &:hover
+//         cursor: pointer
+//         color: #62d76b
+    // &:hover
+    //     cursor: pointer
+    //     color: #62d76b
+
 nav
-    flex-direction: row
+  position: fixed
+  z-index: 999
+  top: 0
+  left: 0px
+  right: 0px
+  height: 60px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-self: flex-end
+  align-items: center
+  background-color: #ffffff
+  box-shadow: 0px 2px 6px 0px #00000017
+  z-index: 10
+  & > a
+    height: 60px
+    margin-left: 40px
+    padding-right: 10px
     display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+    & > img
+      height: 15px
+      width: auto
+// .align-items
+//   display: flex
+.flex
+  align-items: center
+.section2
+  display: flex
+  flex-direction: row
+  margin-left: auto
+  margin-right: 40px
+  align-items: center
+.rigth
+  height: 100%
+  display: flex
+  flex-direction: row
+  justify-content: center
+  position: relative
+  padding-left: 10px
+  cursor: pointer
+  & > img
+    height: 35px
+    width: 35px
+    border-radius: 100px
+span
+  display: flex
+  flex-direction: column
+  justify-content: center
+  color: #ffffff
+
+
+.align-item
+  display: flex
+  flex: 1
+.item
+  margin-left: 40px
+  & > a
+    font-size: 16px
     font-family: 'Didact Gothic', sans-serif
-    padding-right: 3rem
-    padding-left: 3rem
-    padding-bottom: 1rem
-    color: #3e416d
-#logo
-    height:25px
-    margin:10px 20px 0px 20px 
-svg
-    height: 34px
-    width: 77px
+    font-weight: bolder
+    letter-spacing: 0.6px
+    color: #b0b2be
+    cursor: pointer
+    text-decoration: none
     &:hover
-        cursor: pointer
-        
-.content
-    flex-direction: row
-    justify-content: space-between
-.content-items
-    flex-direction: row
-    display: flex
-h3
-    &#btn-sign-in
-        color: #ddd
-    margin:10px 20px 0px 20px 
-    &#btn-sign-up
-        border-style: solid
-        border-radius: 12px
-        border-color: #62d76b
-        padding-left: 12px
-        padding-right: 12px
-        padding-bottom: 2px
-        &:hover
-            background-color: #62d76b
-            color: white
-            
-    &:hover
-        cursor: pointer
-        color: #000
-            
+      cursor: pointer
+      color: #62d76b

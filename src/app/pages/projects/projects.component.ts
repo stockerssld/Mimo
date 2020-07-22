@@ -50,6 +50,91 @@ export class ProjectsComponent implements OnInit {
           progress: '10'
         }
       ]
+    },
+    {
+      img:'https://images.getmimo.com/icons/0585799f-ec2b-4c2f-9994-a89521663917',
+      title:'Project 1: Your Personal HomePage',
+      description:'Build and launch your first website on the web',
+      Chapter:[
+        {
+          number: 1,
+          title:'Your personal, Home page',
+          progress: '90.34'
+        },
+        {
+          number: 2,
+          title:'we personal, Welcome Home',
+          progress: '10'
+        }
+      ]
+    },
+    {
+      img:'https://images.getmimo.com/icons/0585799f-ec2b-4c2f-9994-a89521663917',
+      title:'Project 1: Your Personal HomePage',
+      description:'Build and launch your first website on the web',
+      Chapter:[
+        {
+          number: 1,
+          title:'Your personal, Home page',
+          progress: '90.34'
+        },
+        {
+          number: 2,
+          title:'we personal, Welcome Home',
+          progress: '10'
+        }
+      ]
+    },
+    {
+      img:'https://images.getmimo.com/icons/0585799f-ec2b-4c2f-9994-a89521663917',
+      title:'Project 1: Your Personal HomePage',
+      description:'Build and launch your first website on the web',
+      Chapter:[
+        {
+          number: 1,
+          title:'Your personal, Home page',
+          progress: '90.34'
+        },
+        {
+          number: 2,
+          title:'we personal, Welcome Home',
+          progress: '10'
+        }
+      ]
+    },
+    {
+      img:'https://images.getmimo.com/icons/0585799f-ec2b-4c2f-9994-a89521663917',
+      title:'Project 1: Your Personal HomePage',
+      description:'Build and launch your first website on the web',
+      Chapter:[
+        {
+          number: 1,
+          title:'Your personal, Home page',
+          progress: '90.34'
+        },
+        {
+          number: 2,
+          title:'we personal, Welcome Home',
+          progress: '10'
+        }
+      ]
+    },
+    {
+      img:'https://images.getmimo.com/icons/0585799f-ec2b-4c2f-9994-a89521663917',
+      title:'Project 1: Your Personal HomePage',
+      description:'Build and launch your first website on the web',
+      Chapter:[
+        {
+          number: 1,
+          title:'Your personal, Home page',
+          progress: '90.34'
+        },
+        {
+          number: 2,
+          title:'we personal, Welcome Home',
+          progress: '10'
+        }
+      ]
     }
   ]
 
