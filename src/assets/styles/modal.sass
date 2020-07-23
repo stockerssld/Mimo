@@ -1,0 +1,109 @@
+
+#modal
+  background:rgba(#000,0.9)
+  color: #fff
+  position: absolute
+  top: 5rem
+  right: 2.5rem
+  height: 100%
+  width: 100%
+  transition: all .5s
+  display: none
+
+  ul
+    position: absolute
+    right: 0px
+    list-style-type: none
+    z-index: 3
+    padding: 12px 0px
+    cursor: pointer
+    border-radius: 12px
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2)
+    background-color: #ffffff
+    flex-direction: column
+    min-width: 230px
+    display: flex
+    & > div
+      position: fixed
+      top: 0px
+      left: 0px
+      bottom: 0px
+      right: 0px
+      background-color: transparent
+    & > label
+      display: flex
+      align-items: center
+      height: 40px
+      padding: 0px 16px
+
+
+      font-size: 14px
+      line-height: 19px
+      color: #9798a9
+      z-index: 4
+
+#mostrar-modal
+  display: none
+  &:hover
+    background: darken(steelblue,10%)
+  &:checked
+    & ~ #modal
+      display: flex
+    & ~ #cerrar-modal + label
+      display: block
+
+#cerrar-modal
+  display: none
+  + label
+    position: absolute
+    top: 1em
+    right: 1em
+    z-index: 1
+    color: #fff
+    font-weight: bold
+    cursor: pointer
+    background: tomato
+    width: 25px
+    height: 25px
+    line-height: 25px
+    text-align: center
+    display: none
+    transition: all .5s
+
+  &:checked
+    & ~ #modal
+      display: none
+    & + label
+      display: none
+
+.option
+  cursor: pointer
+  padding-left: 20px
+  padding-right: 20px
+  border: 0px
+  color: #9798a9
+  height: 48px
+  font-size: 16px
+  letter-spacing: 1px
+
+  display: flex
+  align-items: center
+  height: 40px
+  letter-spacing: 0px
+  outline: none
+  &:hover
+    color: #3e416d
+    background-color: #f0f5fd
+
+#option
+  position: absolute
+  background-color: #f9fafe
+  border-radius: 8px
+  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.25)
+  flex-direction: column
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+  z-index: 1
+  padding: 40px 60px 60px 60px
+  max-width: 85%

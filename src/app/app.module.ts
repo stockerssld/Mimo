@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
-import { CardsComponent } from './components/cards/cards.component';
+import { CardsComponent } from './components/Cards/project-cards/cards.component';
 import {FormsModule} from '@angular/forms';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
@@ -19,6 +19,7 @@ import { ButtonComponent } from './components/Buttons/button/button.component';
 import { ButtonWithIconsComponent } from './components/Buttons/button-with-icons/button-with-icons.component';
 import { PlaygroundsComponent } from './pages/playgrounds/playgrounds.component';
 import { PlaygroundsListComponent } from './components/list/playgrounds-list/playgrounds-list.component';
+import { OptionCardComponent } from './components/Cards/option-card/option-card.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +37,7 @@ import { PlaygroundsListComponent } from './components/list/playgrounds-list/pla
     ButtonWithIconsComponent,
     PlaygroundsComponent,
     PlaygroundsListComponent,
+    OptionCardComponent,
   ],
   imports: [
     BrowserModule,

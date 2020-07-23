@@ -18,6 +18,25 @@ export class PlaygroundsComponent implements OnInit {
     icon:'Plus'
   }
 
+  newPlayground=[
+    {
+      title:'Javascrip program',
+      language:["js","html5",],
+      description:"An empty JavaScript file ideal for practicing the basics of coding."
+    },
+    {
+      title:'Simple web site',
+      language:[
+        "js","html5", "css"
+      ],
+      description:"An empty website containing HTML, CSS & JavaScript files."
+    },
+    {
+      title:'python program',
+      language:["python"],
+      description:"An empty Python file ideal for practicing the basics of coding."
+    }
+  ]
   playgrounds=[
     {
       number:"1",

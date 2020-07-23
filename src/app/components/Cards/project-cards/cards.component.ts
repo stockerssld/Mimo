@@ -1,6 +1,6 @@
 import { Component, OnInit, EventEmitter, Input } from '@angular/core';
-import { Project } from './../../models/project.mode';
-import { Chapter } from './../../models/chapter.model';
+import { Project } from './../../../models/project.model';
+import { Chapter } from './../../../models/chapter.model';
 
 @Component({
   selector: 'app-cards',

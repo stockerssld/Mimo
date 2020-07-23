@@ -32,3 +32,93 @@ h1
 span
   width: 12px
   margin-right: 12px
+
+#modal
+  .container-modal
+    position: fixed
+    top: 0px
+    left: 0px
+    bottom: 0px
+    right: 0px
+    background-color: transparent
+    cursor: pointer
+    background: rgba(0, 0, 0, 0.25)
+
+#content
+  width: 100%
+  position: absolute
+  background-color: #f9fafe
+  border-radius: 8px
+  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.25)
+  flex-direction: column
+  // left: 50%
+  // top: 50%
+  left: 54.5%
+  top: 62%
+  bottom: -104%
+
+  transform: translate(-50%, -50%)
+  z-index: 1
+  // padding: 40px 85px 60px 85px
+  // padding: 40px 60px 60px 60px
+  max-width: 85%
+  overflow-x: auto
+h1
+  text-align: center
+  padding-top: 32px
+.content-option
+  display: flex
+  margin-top: 32px
+  margin-bottom: 32px
+  align-content: center
+  justify-content: center
+  flex-direction: row
+  flex-wrap: wrap
+  flex-flow: row wrap
+  align-content: flex-end
+
+  @media screen and (max-width:1000px)
+    & > div
+      & > label
+        display: contents
+        & > app-option-card
+          margin-top: 32px
+          margin-right: 5px
+          &:hover
+            border: 2px solid #62d76b
+            box-shadow: 0px 1px 2px rgba(75, 219, 82, 0.815)
+  @media screen and (min-width:1000px)
+    & > div
+      & > label
+        display: contents
+        & > app-option-card
+          margin-right: 24px
+          margin-top: 32px
+
+  & > div
+    & > label
+      display: contents
+      // flex: block
+      // flex-grow:
+      & > app-option-card
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        background-color: #ffffff
+        border-radius: 8px
+        width: 240px
+        height: 270px
+        cursor: pointer
+        margin-top: 32px
+        box-shadow: 0px 1px 2px rgba(77, 77, 135, 0.15)
+        border: 2px solid #f9fafe
+        &:hover
+          border: 2px solid #62d76b
+          box-shadow: 0px 1px 2px rgba(75, 219, 82, 0.815)
+// .wrap
+//   flex-wrap: wrap
+//   display: flex
+//   .column
+//     flex-grow: 1
+//     display: block

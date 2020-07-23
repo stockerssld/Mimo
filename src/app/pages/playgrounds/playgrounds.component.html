@@ -1,25 +1,36 @@
 <div class="content-all">
   <div class="content-projects">
     <div class="content-title">
-      <div class=" left">
-        <h1>Playgrounds</h1>
-      </div>
-
-      <div class="right">
-
-        <label class="button">
+      <h1>Playgrounds</h1>
+      <input type="radio" id="mostrar-modal" name="modal" />
+      <div>
+        <label class="button" for="mostrar-modal">
           <span class="icon is-left">
-            <img [src]="'./../../../../../assets/svg/Plus.svg'" alt="">
+            <img [src]="'./../../../../../assets/svg/Plus.svg'" alt="" />
           </span>
-
           NEW PLAYGROUND
         </label>
       </div>
+      <input type="radio" id="cerrar-modal" name="modal" />
+      <div id="modal">
+          <div class="container-modal"></div>
+          <div id="content">
+            <h1>
+            Select a Template
+            </h1>
+              <div class="content-option">
+              <div *ngFor=" let NewlPayground of newPlayground ">
+              <label for="cerrar-modal">
+                <app-option-card [DataOptionCard]="NewlPayground">
+                </app-option-card>
+              </label>
+            </div>
+            </div>
+          </div>
+      </div>
     </div>
-
     <div class="content-playgrounds" *ngFor="let playground of playgrounds">
       <app-playgrounds-list [playground]="playground"></app-playgrounds-list>
     </div>
-
   </div>
 </div>
