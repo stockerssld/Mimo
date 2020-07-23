@@ -8,6 +8,7 @@
 @import "./assets/styles/link"
 @import "./assets/styles/separator"
 
+@import "./assets/styles/button"
 $font-stack: 'Didact Gothic', sans-serif
 
 *
@@ -16,6 +17,13 @@ $font-stack: 'Didact Gothic', sans-serif
   &:nth-child(3n)
     @media screen and ( max-width:640px)
       display: none
+  // &:nth-child(3n)
+  //   @media screen and ( min-width:640px)
+  //     width: 100%
+  & > app-sign-up
+    width: 100%
+  & > app-sign-in
+    width: 100%
   & > app-learn-to-code
     @media screen and ( min-width:640px)
       display: inline

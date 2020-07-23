@@ -1,0 +1,14 @@
+<div class="list-content">
+
+  <span class="number">{{playground.number}}</span>
+  <div class="section-icons" >
+    <div *ngFor="let icon of playground.icons">
+      <img src="./../../../../assets/svg/{{icon}}.svg" title="{{icon}}" >
+    </div>
+  </div>
+  <span class="title-playground">{{playground.title}}</span>
+  <span class="time-playground">{{playground.time}}</span>
+  <div class="options">
+    <img  src="./../../../../assets/svg/Load.svg" alt="">
+  </div>
+</div>

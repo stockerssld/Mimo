@@ -1,9 +1,25 @@
 <div class="content-all">
+  <div class="content-projects">
+    <div class="content-title">
+      <div class=" left">
+        <h1>Playgrounds</h1>
+      </div>
 
-<!-- <div class="content-playgrounds"> -->
-  <!-- <div class="container-all"> -->
-    <p>playgrounds works!</p>
+      <div class="right">
 
-  <!-- </div> -->
+        <label class="button">
+          <span class="icon is-left">
+            <img [src]="'./../../../../../assets/svg/Plus.svg'" alt="">
+          </span>
 
+          NEW PLAYGROUND
+        </label>
+      </div>
+    </div>
+
+    <div class="content-playgrounds" *ngFor="let playground of playgrounds">
+      <app-playgrounds-list [playground]="playground"></app-playgrounds-list>
+    </div>
+
+  </div>
 </div>
