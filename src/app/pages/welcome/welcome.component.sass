@@ -1,3 +1,28 @@
+
+.AppContent
+  display: flex
+  flex-direction: row
+  margin-top: 12px
+  justify-content: space-around
+  & > img
+    width: 40%
+
+.AppInformation
+  flex-direction: column
+  margin-top: 66px
+  max-width: 350px
+
+.star
+  display: flex
+  &>img
+    width: 6%
+    margin-right: 8px
+span
+  color: rgb(151, 152, 169)
+  font-size: 12px
+  margin-top: 24px
+
+
 #container-welcome
   height: 100vh
   display: flex
@@ -9,6 +34,7 @@
   flex-direction: column
 #firts-section
   flex-direction: row
+  padding: 63px 63px 63px 63px
 #firts-section-content
   font-family: FibraOne-Bold, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
   color: rgb(62, 65, 109)
@@ -20,6 +46,13 @@ h1
   display: flex
   font-size: 48px
   line-height: 64px
+  .section-3
+    display: flex
+    font-size: 32px
+    line-height: 48px
+    color: rgb(62, 65, 109)
+    font-weight: normal
+    margin: 0px
 svg
   padding: 12px
 #second-section-init
@@ -35,16 +68,98 @@ svg
 #second-section
   display:flex
   flex-direction:row
+  & > #second-section-content
+    display: flex
+    width: 100%
+    margin-top: 40px
 
-#second-section-content
-  display:flex
-  flex-direction:row
-
-
-#firts-section-content-items
+#second-section-content-items
+  width: 100%
   margin:12px
   padding:12px
-  background-color:#000
 
-#firts-section
-  flex-direction: row
+.content-image
+  position: relative
+  overflow: hidden
+  width: 100%
+  max-width: 336px
+  & > img
+    // width: 100%
+    position: absolute
+    top: 0px
+    left: 0px
+    width: 100%
+    height: 100%
+    object-fit: cover
+    object-position: center center
+    transition-delay: 500ms
+
+.content-section-2
+  display: flex
+  flex-direction: column
+
+.content-title
+  display: flex
+  -webkit-box-align: center
+  align-items: center
+  margin-top: 24px
+  justify-content: end
+  & > div
+    display: inline
+    flex-shrink: 0
+    width: 32px
+    height: 32px
+    fill: rgb(149, 83, 241)
+    margin-left: 10px
+    margin-right: 16px
+
+h3
+  color: rgb(176, 178, 190)
+  font-size: 14px
+  font-weight: normal
+  line-height: 24px
+  margin: 0px 0px 0px 59px
+
+#ThirdSection
+  // display: flex
+  margin-top: 200px
+  max-width: 1040px
+  margin-left: auto
+  margin-right: auto
+  box-sizing: content-box
+  // padding: 0px 40px
+  // margin
+.right
+  display: flex
+  position: relative
+  flex: 1 1 0%
+  & > .first
+    width: 100%
+    max-width: 336px
+    box-shadow: rgba(47, 49, 82, 0.1) 0px 0px 40px 0px
+    border-radius: 12px
+    display: flex
+    position: relative
+    flex: 1 1 0%
+    &>.carrusel
+      position: relative
+      overflow: hidden
+  & > .secound
+    position: absolute
+    z-index: -1
+    top: 37%
+    left: 20%
+#secound-section-content-items .left
+  display: flex
+  flex-shrink: 0
+  width: 50%
+  flex-direction: column
+  padding-left: 100px
+  box-sizing: border-box
+#secound-section-content span
+  display: flex
+  font-size: 16px
+  font-weight: normal
+  line-height: 32px
+  color: rgb(151, 152, 169)
+  margin: 10px 0px 0px

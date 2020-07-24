@@ -20,6 +20,8 @@ import { ButtonWithIconsComponent } from './components/Buttons/button-with-icons
 import { PlaygroundsComponent } from './pages/playgrounds/playgrounds.component';
 import { PlaygroundsListComponent } from './components/list/playgrounds-list/playgrounds-list.component';
 import { OptionCardComponent } from './components/Cards/option-card/option-card.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { TimelineComponent } from './components/timeline/timeline.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,6 +40,8 @@ import { OptionCardComponent } from './components/Cards/option-card/option-card.
     PlaygroundsComponent,
     PlaygroundsListComponent,
     OptionCardComponent,
+    CarouselComponent,
+    TimelineComponent,
   ],
   imports: [
     BrowserModule,
