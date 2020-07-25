@@ -1,67 +1,51 @@
-
 <div class="section-timeline">
-<aside class="carousel__navigation">
-  <ol class="carousel__navigation-list">
+  <div class="{{progress==1 ? 'list-day-active':'list-day-inactive'}}" (click)="changeforProgress(1)">
+    <div class="day-button canActive">
+      Day 1
+    </div>
+    <h3>
+      Your Personal HomePage
+    </h3>
+  </div>
+  <div class="{{progress==2 ? 'list-day-active':'list-day-inactive'}}" (click)="changeforProgress(2)">
+    <div class="day-button canActive">
+      Day 3
+    </div>
+    <h3>
+      User Profile
+    </h3>
+  </div>
 
-    <li class="carousel__navigation-item">
-      <a  href="#carousel__slide1" class="carousel__navigation-button">
-         <div  id="option1" class="list-day-inactive">
-          <div class="day-button">
-            Day 1
-          </div>
-          <h3>
-            Your Personal Homepage
-          </h3>
-        </div>
-      </a>
-    </li>
-    <li class="carousel__navigation-item">
-      <a href="#carousel__slide2" class="carousel__navigation-button">
-         <div role="" tabindex="-1" id="option2" class="list-day-inactive">
-          <div class="day-button">
-            Day 3
-          </div>
-          <h3>
-            User Profile
-          </h3>
-        </div>
-        </a>
-    </li>
-    <li class="carousel__navigation-item">
-      <a href="#carousel__slide3"
-         class="carousel__navigation-button">
-         <div class="list-day-inactive">
-          <div class="day-button pill">
-            Day 7
-          </div>
-          <h3>
-            Landing Page
-          </h3>
-        </div>
-        </a>
-    </li>
-    <li class="carousel__navigation-item">
-      <a href="#carousel__slide4"
-         class="carousel__navigation-button">
-         <div class="list-day-inactive">
-          <div class="day-button">
-            Day 10
-          </div>
-          <h3>
-            Voting Feature
-          </h3>
-        </div>
-      </a>
-    </li>
-    <div class="line">
+  <div class="{{progress==3 ? 'list-day-active':'list-day-inactive'}}" (click)="changeforProgress(3)">
+    <div class="day-button canActive">
+      day 7
     </div>
-    <div class="arrow">
-      <img src="./../../../assets/svg/Arrow.svg" alt="">
-
+    <h3>
+      Landing Page
+    </h3>
+  </div>
+  <div class="{{progress==4 ? 'list-day-active':'list-day-inactive'}}" (click)="changeforProgress(4)">
+    <div class="day-button canActive">
+      day 10
     </div>
-    <div class="text">
-      ... and that's just the beginning!
+    <h3>
+      Voting Feature
+    </h3>
+  </div>
+  <div class="{{progress==5 ? 'list-day-active':'list-day-inactive'}}" (click)="changeforProgress(5)">
+    <div class="day-button canActive">
+      day 14
     </div>
-  </ol>
-</aside>
+    <h3>
+      Add to card
+    </h3>
+  </div>
+  <div class="line">
+  </div>
+  <div class="arrow">
+    <img src="./../../../assets/svg/Arrow.svg" alt="">
+  </div>
+  <div class="text">
+    ... and that's just the beginning!
+  </div>
 </div>

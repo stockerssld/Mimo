@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, OnChanges } from '@angular/core';
 
 @Component({
   selector: 'app-timeline',
@@ -8,8 +8,20 @@ import { Component, OnInit } from '@angular/core';
 export class TimelineComponent implements OnInit {
 
   constructor() { }
+  @Output()onDChangeForTimeLine= new EventEmitter<number>()
+  @Output()onClickChange = new EventEmitter<void>()
+
+
+  @Input() progress:number= 0
 
   ngOnInit(): void {
+
+  }
+
+  changeforProgress(progress): void{
+    this.progress=progress
+    this.onDChangeForTimeLine.emit(progress)
+    this.onClickChange.emit()
   }
 
 }
