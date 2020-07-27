@@ -1,3 +1,31 @@
+.background-section-1
+  position: absolute
+  z-index: -2
+  top: 0px
+  left: 0px
+  width: 100%
+  height: 1000px
+  overflow: hidden
+  & > div
+    position: absolute
+    z-index: -2
+    width: 1000px
+    height: 1000px
+    top: -31%
+    left: 50%
+    transform: translateX(-4%)
+    background-color: rgb(249, 250, 254)
+    border-radius: 50%
+    overflow: hidden
+    & > div
+      position: absolute
+      bottom: -5px
+      left: 50%
+      transform: translateX(-50%)
+      display: none
+      @media (min-width: 1024px)
+        display: inherit
+      // & > img
 
 .AppContent
   display: flex
@@ -99,7 +127,8 @@ svg
       @media (max-width: 985px)
         text-align: center
         text-align: -webkit-center
-
+      & > h1
+        place-content: center
         // & > content-image
 
 
@@ -173,6 +202,9 @@ h3
   display: flex
   position: relative
   flex: 1 1 0%
+  place-content: center
+  @media screen and ( max-width: 1200px )
+    place-content: baseline
   & > .first
     width: 100%
     max-width: 336px
@@ -190,9 +222,15 @@ h3
     position: absolute
     z-index: -1
     top: 37%
-    left: 20%
+    left: 43%
     @media (max-width: 985px)
       display: none
+    @media screen and ( max-width: 1200px )
+      left: 20%
+    // @media (min-width: 1315px)
+    //   right: -47%
+
+    //   display: none
 
 #secound-section-content-items .left
   display: flex

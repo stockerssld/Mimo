@@ -22,6 +22,9 @@ import { PlaygroundsListComponent } from './components/list/playgrounds-list/pla
 import { OptionCardComponent } from './components/Cards/option-card/option-card.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { TimelineComponent } from './components/timeline/timeline.component';
+import { BlogComponent } from './pages/blog/blog.component';
+import { WelcomeSectionSection1 } from './pages/welcome/welcome-section-1/welcome-section-1.component'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +32,7 @@ import { TimelineComponent } from './components/timeline/timeline.component';
     CardsComponent,
     NavbarComponent,
     WelcomeComponent,
+    WelcomeSectionSection1,
     CircleProgressComponent,
     TooltipComponent,
     LearnToCodeComponent,
@@ -42,9 +46,11 @@ import { TimelineComponent } from './components/timeline/timeline.component';
     OptionCardComponent,
     CarouselComponent,
     TimelineComponent,
+    BlogComponent,
+
   ],
   imports: [
-    BrowserModule,
+  BrowserModule,
     AppRoutingModule,
     FormsModule,
     NgCircleProgressModule.forRoot({

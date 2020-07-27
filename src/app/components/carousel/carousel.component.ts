@@ -7,7 +7,7 @@ import { Component, OnInit, Renderer2, OnChanges, ElementRef, ViewChild, AfterVi
 })
 export class CarouselComponent implements OnInit, OnDestroy, OnChanges {
 
-  @ViewChild('carousel') carousel : ElementRef
+  // @ViewChild('carousel') carousel : ElementRef
 
   @Output()onDecrease= new EventEmitter<number>()
 
