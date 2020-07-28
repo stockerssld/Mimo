@@ -24,6 +24,8 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { TimelineComponent } from './components/timeline/timeline.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { WelcomeSectionSection1 } from './pages/welcome/welcome-section-1/welcome-section-1.component'
+import { MarkdownModule, MarkedOptions } from 'ngx-markdown'
+import { HttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -50,7 +52,7 @@ import { WelcomeSectionSection1 } from './pages/welcome/welcome-section-1/welcom
 
   ],
   imports: [
-  BrowserModule,
+    BrowserModule,
     AppRoutingModule,
     FormsModule,
     NgCircleProgressModule.forRoot({
@@ -61,6 +63,19 @@ import { WelcomeSectionSection1 } from './pages/welcome/welcome-section-1/welcom
       innerStrokeColor: "#C7E596",
       animationDuration: 300,
     }),
+    MarkdownModule.forRoot({
+      // loader: HttpClient,
+      markedOptions:{
+        provide: MarkedOptions,
+        useValue: {
+          gfm: true,
+          breaks: false,
+          pedantic: false,
+          smartLists: true,
+          smartypants: false,
+        },
+      }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
